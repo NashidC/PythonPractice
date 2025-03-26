@@ -1,8 +1,12 @@
 def sum_of_elements(lst):
+    #if list is empty
     if not lst:
         return 'Empty List'
+    #initialize total     
     total_sum = 0
+    #loops through each element or item in the list
     for item in lst:
+        #isinstance checks if the item is an int or float
         if isinstance(item,(int,float)):
             total_sum += item
         else:
